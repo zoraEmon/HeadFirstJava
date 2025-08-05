@@ -3,7 +3,7 @@ package Puzzles.echoGame;
 public class EchoTestDrive {
     public static void main(String[] args) {
         Echo e1 = new Echo();
-        Echo e2 = e1;
+        Echo e2 = new Echo();
 
         int x = 0;
 
@@ -24,8 +24,6 @@ public class EchoTestDrive {
 
             x+=1;
         }
-
-        System.out.println("");
-        System.out.println(e2.count);
+        System.out.println("\n" + e2.count);
     }
 }
